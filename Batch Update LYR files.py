@@ -18,7 +18,7 @@ newPath = "F:\\" #the new part that the file should be updated to (TO)
 print "Batch update of .lyr files is started for: " + targetDir + "\n"
 
 #Every file is backed up in a subfolder named _BK therefore this is first created if it doesn't exist already.
-#python versions <3 does not support ignoring everything but value in list, therefore i have to ignore all known files except lyr files. There are other more elegant solutions, but this works... (ignorefiles)
+#python versions < 3 does not support ignoring everything but value in list, therefore i have to ignore all known files except lyr files. There are other more elegant solutions, but this works... (ignorefiles)
 if not os.path.exists(targetDir + "\_BK"):
                print "No Backup is found, " + targetDir + "\_BK is created..."
                shutil.copytree(targetDir, targetDir + "\_BK\\", ignore=shutil.ignore_patterns(ignorefiles)
