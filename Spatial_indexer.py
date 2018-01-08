@@ -1,5 +1,5 @@
 # Copyright, Jack Andersen - Wisecloud.dk
-#-*- coding: utf-8 -*-
+# Coding: utf-8
 #import site-packages, modules and set enviroment, glob can ensure unicode caracters Æ Ø Å is kept
 import os, time, datetime, arcpy, os
 from arcpy import env
